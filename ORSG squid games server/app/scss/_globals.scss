@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(sectext);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var($text-color);
+    border-radius: 5rem;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s ease-out;
+  background: var($black);
+  color: var($text-color);
+}
+.container {
+  max-width: 116.8rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+section {
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}

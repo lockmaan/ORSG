@@ -1,0 +1,137 @@
+.title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 10rem;
+  h2 {
+    margin-bottom: 2.5rem;
+  }
+  p {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .polygon {
+    position: absolute;
+    top: -8rem;
+    right: -2.2rem;
+  }
+}
+.all-actor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10rem;
+  &::before {
+    content: "";
+    background: transparent;
+    width: 38.2rem;
+    height: 38.6rem;
+    border: 8.6rem solid transparent;
+    border-image: $actor-gradient;
+    border-image-slice: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .actor-box {
+    background: $text-color;
+    color: $actor-text;
+  }
+}
+.actor-box {
+  .actor-text {
+    padding-top: 1rem;
+  }
+}
+.actor-one {
+  width: 17.6rem;
+  height: 25.8rem;
+  .actor-text {
+    h4 {
+      font-size: 1.6rem;
+    }
+    span {
+      font-size: 1.2rem;
+    }
+  }
+}
+.actor-two {
+  width: 19.9rem;
+  height: 29.2rem;
+  .actor-text {
+    h4 {
+      font-size: 2rem;
+    }
+    span {
+      font-size: 1.4rem;
+    }
+  }
+}
+.actor-three {
+  width: 27rem;
+  height: 39.5rem;
+  z-index: 1;
+  .actor-text {
+    padding: 2.5rem 0 0;
+    h4 {
+      font-size: 2.4rem;
+    }
+    span {
+      font-size: 1.6rem;
+    }
+  }
+}
+.actor-four {
+  width: 38rem;
+  height: 56.8rem;
+  .actor-text {
+    padding: 3rem 4.4rem;
+    p {
+      color: $actor-text;
+    }
+    span {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+  }
+}
+.actor-video {
+  border-radius: 0.6rem;
+  text-align: center;
+  position: relative;
+  background: url(../img/video-img.jpg) no-repeat center;
+  background-size: cover;
+  max-width: 77rem;
+  width: 100%;
+  height: 45.5rem;
+  margin: 0 auto 12.6rem;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $videobg;
+    opacity: 0.78;
+    border-radius: 0.6rem;
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/play-button.png) no-repeat center;
+    cursor: pointer;
+  }
+  .actor-shape {
+    position: absolute;
+    bottom: -7rem;
+    right: -9rem;
+    z-index: -1;
+  }
+}

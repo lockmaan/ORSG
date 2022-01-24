@@ -1,0 +1,51 @@
+.video-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 10000;
+  transition: 0.5s;
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  video {
+    width: 70%;
+    max-width: 135rem;
+  }
+  .video-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var($text-color);
+    font-size: 4rem;
+    width: 7rem;
+    height: 7rem;
+    margin: 0 auto;
+    cursor: pointer;
+    position: absolute;
+  }
+  .close-video {
+    position: absolute;
+    top: 7rem;
+    right: 7rem;
+    color: var($btnbgcolor);
+    font-size: 4rem;
+    cursor: pointer;
+  }
+}
+.video-wrapper.active {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+.video-control {
+  &:not(:hover) {
+    opacity: 0.05;
+  }
+}
